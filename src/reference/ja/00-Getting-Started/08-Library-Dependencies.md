@@ -66,14 +66,14 @@ unmanagedJars in Compile := Seq.empty[sbt.Attributed[java.io.File]]
 
 ### マネージ依存性（Managed Dependencies）
 
-sbt は [Apache Ivy] を使ってマネージ依存性を実装しているので、既に Maven か Ivy に慣れているなら、違和感無く入り込めるだろう。
+sbt は [Apache Ivy][Apache Ivy] を使ってマネージ依存性を実装しているので、既に Maven か Ivy に慣れているなら、違和感無く入り込めるだろう。
 
 #### `libraryDependencies` キー
 
 大体の場合、依存性を `libraryDependencies` セッティングに列挙するだけでうまくいくだろう。
 Maven POM ファイルや、Ivy コンフィギュレーションファイルを書くなどして、依存性を外部で設定してしまって、
 sbt にその外部コンフィギュレーションファイルを使わせるということも可能だ。
-これに関しては、[Library Management] を参照。
+これに関しては、[Library Management][Library-Management] を参照。
 
 依存性の宣言は、以下のようになる。ここで、`groupId`、`artifactId`、と `revision` は文字列だ:
 
